@@ -1,0 +1,54 @@
+.history-right-colom{
+    background-color: white;
+    height: 565px;
+}
+.list-group-item.active {
+    background-color: #bf40bf;
+    border-color: #bf40bf;
+}
+.card .card-horizontal .card-body p{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.card-body{
+    min-width: 0;
+}
+time{
+    left:27px;
+    bottom:5px;
+}
+.card-icons .remove{
+    cursor: pointer;
+    position: absolute;
+    left: 320px;
+    top: 10px;
+    color: #2c3131c7;
+}
+
+
+@media(min-width: 768px) and (max-width: 1200px){
+     .card .card-horizontal .card-body .channel-img{
+        display: block;
+        margin-top: 10px;
+    }
+    .card .card-horizontal .card-body .channel-img>img{
+        margin-right: 0px !important;
+    }
+}
+@media(max-width: 767px){
+    .card .card-top-image{
+        width: 100%;
+    }
+      .card .card-horizontal time{
+      left: 5px;
+    }
+    .card .card-horizontal .fa-play{
+     right:238px;
+    }
+}
+@media(max-width: 991px){
+    .card{
+        margin-top: 12px;
+    }
+} 

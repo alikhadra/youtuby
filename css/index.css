@@ -1,0 +1,187 @@
+@font-face{
+    font-family: "cairofont";
+    src: url(../fonts/Cairo-Regular.ttf);
+}
+body{
+    font-family: "cairofont", Arial, sans-serif ;
+    background-color: lightgrey;
+}
+a{
+    color: black ;
+    text-decoration: none !important;
+}
+
+#top-menu .bg-light{
+    background-color: white !important;
+} 
+
+#top-menu .video-icon{
+           background-color: #bf40bf;
+           color: white;
+           border-radius: 15%;
+}
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .active>.nav-link{
+    color: white;
+    background-color: #bf40bf;
+}
+button{
+    background-color: transparent !important;
+    color: #bf40bf !important;
+    border-color: #bf40bf !important;
+}
+button:hover{
+    color: white !important;
+    background-color: #bf40bf !important;
+}
+.navbar .login{
+    color: #bf40bf;
+}
+.modal .modal-header .close{
+    color: #bf40bf !important;
+    background-color: transparent !important;
+}
+input.form-control:focus,
+button:focus{
+    box-shadow: none !important;
+}
+.card .card-icons{
+    position: relative;
+}
+.card .card-horizontal .card-body p{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.card-body{
+    min-width: 0;
+}
+time{
+    position: absolute;
+    bottom: 10px;
+    left: 7px;
+    color: white;
+    background-color: black;
+    padding: 0px 3px;
+}
+.card .fa-play{
+    position: absolute;
+    top: 43%;
+    right: 41%;
+    color: #2c3131c7;
+    display: none;
+}
+.card:hover .fa-play {
+    display: inline;
+}
+.card:hover{
+    transform: translatey(-0.9%);
+}
+.card{
+    transition: transform .5s;
+}
+.card .card-title{
+    height: 50px;
+    overflow: hidden;
+}
+.sidebar{
+    position: fixed;
+    z-index: 4;
+    right: -17rem;
+    transition: all .5s ease-in-out;
+    height: 100%;
+    background-color: white;
+    overflow: hidden;
+    padding-bottom: 75px;
+    
+}
+.sidebar:hover{
+    overflow-y: scroll;
+}
+.purpul{
+    color:#bf40bf ;
+}
+.sidebar .list-group-item:hover{
+    color: white;
+    background-color: #bf40bf;
+}
+.sidebar .list-group-item:hover .purpul{
+    color: white;
+}
+.sidebar .list-group-item{
+    width: 17rem;
+}
+#wrap.toggled .sidebar{
+    right: 0rem;
+}
+#toggler:hover{
+    cursor: pointer;
+}
+.sidebar::-webkit-scrollbar{
+    background-color: rgb(230, 230, 230);
+    width: 8px;
+}
+.sidebar::-webkit-scrollbar-thumb{
+    background-color: rgb(179, 179, 179);
+    width: 8px;
+}
+.layer{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    background-color: rgb(0, 0, 0, 0.5);
+    z-index: 3;
+    display: none;
+}
+.navbar .search-icon{
+    color: #bf40bf;
+    cursor: pointer;
+    padding: 15px 10px;
+    position: absolute;
+    top: 15px;
+    left: 132px;
+    display: none;
+}
+.navbar .search-icon:hover{
+    color: white;
+    background-color: #bf40bf;
+}
+.search-input{
+    position: absolute;
+    top: 72px;
+    border: none;
+    padding: 6px 23px;
+    height: 60px;
+    background-color: #efeeee;
+    display: none;
+    z-index: 1;
+    position: fixed;
+}
+.search-input:focus{
+    background-color: #efeeee !important;
+}
+.container-fluid{
+    padding: 0px;
+    overflow: hidden;
+}
+
+
+
+
+
+@media(max-width: 1124px){
+/* اخفاء حقل البحث الموجود في القائمة العلوية */  
+.navbar .collapse .form-inline{
+    display: none;
+}
+/* اظهار ايقونة البحث*/
+.navbar .search-icon{
+    display: inline;
+}
+}
+@media(min-width: 1124px) {
+    .search-input {
+        display: none !important;
+    }
+}
